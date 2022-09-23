@@ -6,7 +6,7 @@ GradedDimKLR
 ```math
     \dim_q e(i)R^\Lambda_n e(j)
           = \sum_{w\in S_{i,j}}
-              \prod_{t=1}^n[N^\Lambda(w,i,t)_{i_t}] q_{i_t}^{N^{\Lambda,i,t)-1}}
+              \prod_{t=1}^n[N^\Lambda(w,i,t)_{i_t}] q_{i_t}^{N^\Lambda(i,t)-1}}
 ```
 
 from the paper [Graded dimensions and monomial bases for the cyclotomic quiver Hecke algebras](https://arxiv.org/abs/2108.05508G) of Hu and Shi. Here,
