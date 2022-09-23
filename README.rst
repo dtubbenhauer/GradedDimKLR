@@ -23,14 +23,93 @@ where:
 
 * ``C`` specifies the *Cartan type* of the quiver. This can either be a a list
   of the form ``['A', 3]`` (finite type :math:`A_3`), ``['A', 3, 1]`` (affine type
-  :math:`A_3^{(1)}`)
+  :math:`A_3^{(1)}`), ``['B',4]`` (finite type :math:`B_4`), etc.
+
+* ``L`` is a *list* that specifies the dominant weight. For example,
+  ``[0,2,2,3]`` represents the dominant weight
+  :math:`\Lambda_0+2\Lambda_2+\Lambda_3`.
+
+* ``i`` is an `n`-tuple of vertices of the quiver
+
+* ``j`` is an `n`-tuple of vertices of the quiver. If ``j`` is omitted then
+  ``j`` is set equal to ``i``.
+
+* ``verbose`` an optional parameter that wehn set to ``True`` causes additional
+  information to from the HuShi_ formula to be printed.
+
+Examples
+--------
+
+.. code-block:: python
+
+    sage: klr_cyclotomic_dimension(['D',4],[2], [2,3,4,1], verbose=True)
+    Subgroup of permutations = < () >
+    N(1,t)-1: 0  0  0  0
+    N(w,t):   1  1  1  1
+    X(w): 1
+    1
+    sage: klr_cyclotomic_dimension(['D',4],[2], [2,3,4,1], [2,3,4,1], verbose=True)
+    Subgroup of permutations = < () >
+    N(1,t)-1: 0  0  0  0
+    N(w,t):   1  1  1  1
+    X(w): 1
+    1
+    sage: klr_cyclotomic_dimension(['D',4],[2], [2,3,4,1], [2,4,3,1], verbose=True)
+    Subgroup of permutations = < (1,2) >
+    N(1,t)-1: 0  0  0  0
+    N(w,t):   1  1  1  1
+    X(w): 1
+    1
+    sage: klr_cyclotomic_dimension(['A',2,1],[0], [0,1,2], verbose=True)
+    Subgroup of permutations = < () >
+    N(1,t)-1: 0  0  1
+    N(w,t):   1  1  2
+    X(w): q^2 + 1
+    q^2 + 1
+    sage: klr_cyclotomic_dimension(['A',2,1],[0], [0,2,1], verbose=True)
+    Subgroup of permutations = < () >
+    N(1,t)-1: 0  0  1
+    N(w,t):   1  1  2
+    X(w): q^2 + 1
+    q^2 + 1
+    sage:
+    sage: klr_cyclotomic_dimension(['A',2,1],[0], [0,1,2], [0,2,1], verbose=True)
+    Subgroup of permutations = < (1,2) >
+    N(1,t)-1: 0  0  1
+    N(w,t):   1  1  1
+    X(w): q
+    q
+    sage: klr_cyclotomic_dimension(['A',1],[1,1],[1],[1], verbose=True)
+    Subgroup of permutations = < () >
+    N(1,t)-1: 1
+    N(w,t):   2
+    X(w): q^2 + 1
+    q^2 + 1
+    sage: klr_cyclotomic_dimension(['A',1],[1,1],[1],[1], verbose=True)
+    Subgroup of permutations = < () >
+    N(1,t)-1: 1
+    N(w,t):   2
+    X(w): q^2 + 1
+    q^2 + 1
+    sage: klr_cyclotomic_dimension(['B',3],[2], [2,3,3,2,1], verbose=True)
+    Subgroup of permutations = < (), (1,2), (0,3), (0,3)(1,2) >
+    N(1,t)-1: 0  1 -1  0  1
+    N(w,t):   1  2  0  1  2
+    X(w): 0
+    N(w,t):   1  2  2  1  2
+    X(w): (q^4 + 1)*(q^2 + 1)^2/q^2
+    N(w,t):   1  0 -2  1  2
+    X(w): 0
+    N(w,t):   1  0  0  1  2
+    X(w): 0
+    (q^4 + 1)*(q^2 + 1)^2/q^2
 
 Usage
 -----
 
 * With a local installation of SageMath_, start  SageMath_ and attach the file ``graded_dim_klr`` using:
 
-.. code-bHuShi_lock:: python
+.. code-block:: python
 
    sage: %attach graded_dim_klr
    sage: klr_cyclotomic_dimension(['A',3],[2], [2,3,3,2,1], [2,3,2,3,1])
