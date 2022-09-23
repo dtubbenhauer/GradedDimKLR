@@ -4,12 +4,14 @@ GradedDimKLR
 SageMath_ code for computing the dimensions of the weight spaces of the cyclotomic KLR algebras attached to symmetrisable quivers using the amazing formula
 
 ```math
-    \dim_q e(i)R^\Lambda_\alpha e(j)
-          = \sum_{w\in\Sym(i,j)}
+    \dim_q e(i)R^\Lambda_n e(j)
+          = \sum_{w\in S_{i,j}}
               \prod_{t=1}^n[N^\Lambda(w,i,t)}_{i_t}] q_{i_i}^{N^{\Lambda,i,t)-1}}
 ```
 
-from the paper [Graded dimensions and monomial bases for the cyclotomic quiver Hecke algebras](https://arxiv.org/abs/2108.05508G) of Hu and Shi.
+from the paper [Graded dimensions and monomial bases for the cyclotomic quiver Hecke algebras](https://arxiv.org/abs/2108.05508G) of Hu and Shi. Here,
+$e(i)R^\Lambda_ne(j)$ is the $(i,j)$th weight space of the cyclotomic KLR algebra determined byte dominant weight $\Lambda$. See the Hu-Shi paper for the
+unexplained notation in the formula.
 
 The attached code provides a single command ``klr_cyclotomic_dimension`` that uses the Hu-Shi formula to compute the dimension. The syntax of this command is:
 
