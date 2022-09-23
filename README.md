@@ -129,6 +129,28 @@ Copyright (C) 2022
 
 ------------
 
+The formula miraculously also computes web spaces and link polynomials as explained in the note "A formula to evaluate type A webs and link polynomials"
+
+The following code can be run to verify the examples in that note.
+
+The first two are Example 4.5(a), the second is Example 4.5(b).
+
+The final four are the four summands in Example 5.7. The used symmetric group in this case, so the calculation might take a while
+
+klr_cyclotomic_dimension(['A',1],[1,1],[1],[1])
+klr_cyclotomic_dimension(['A',1],[1,1],[1,1],[1,1])
+klr_cyclotomic_dimension(['A',3],[2,2,2],[2,3,2,2,1],[2,3,1,2,2])
+
+klr_cyclotomic_dimension(['A',5],[2,2],[4,5,3,4,2,3,1,2,4,3,5,4,2,3,1,2],[2,2,3,3,4,4,5,5,1,1,2,2,3,3,4,4])
+klr_cyclotomic_dimension(['A',5],[2,2],[4,5,3,4,2,3,2,1,4,3,5,4,2,3,1,2],[2,2,3,3,4,4,5,5,1,1,2,2,3,3,4,4])
+klr_cyclotomic_dimension(['A',5],[2,2],[4,5,3,4,3,2,1,2,4,3,5,4,2,3,1,2],[2,2,3,3,4,4,5,5,1,1,2,2,3,3,4,4])
+klr_cyclotomic_dimension(['A',5],[2,2],[4,5,3,4,3,2,2,1,4,3,5,4,2,3,1,2],[2,2,3,3,4,4,5,5,1,1,2,2,3,3,4,4])
+
+Daniel Tubbenhauer
+Copyright (C) 2022
+
+------------
+
 GNU General Public License, Version 3, 29 June 2007
 
 This program is free software: you can redistribute it and/or modify it under
