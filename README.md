@@ -1,7 +1,7 @@
 GradedDimKLR
 ============
 
-SageMath_ code for computing the dimensions of the weight spaces of the cyclotomic KLR algebras attached to symmetrisable quivers using the amazing formula
+[SageMath](https://www.sagemath.org/SageMath) code for computing the dimensions of the weight spaces of the cyclotomic KLR algebras attached to symmetrisable quivers using the amazing formula
 
 ```math
     \dim_q e(i)R^\Lambda_n e(j)
@@ -21,7 +21,7 @@ The attached code provides a single command ``klr_cyclotomic_dimension`` that us
 
 where:
 
-* ``C`` specifies the *Cartan type* of the quiver. This can either be a a list
+* ``C`` specifies the *Cartan type* of the quiver. This can either be a list
   of the form ``['A', 3]`` (finite type $A_3$), ``['A', 3, 1]`` (affine type
   $A_3^{(1)}$), ``['B',4]`` (finite type $B_4$), etc.
 
