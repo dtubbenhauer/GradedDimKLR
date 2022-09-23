@@ -4,13 +4,14 @@ r"""
 
     By Hu-Shi, if i,j\in I^n then
 
-        \dim_q e(i)R^\Lambda_\alpha e(j)
-          = \sum_{w\in\Sym(i,j)}
-              \prod_{t=1}^n[N^\Lambda(w,i,t)}_{i_t}] q_{i_i}^{N^{\Lambda,i,t)-1}}
+    .. MATH::
+
+        \dim_q e(i)R^\Lambda_n e(j)
+          = \sum_{w\in S_{i,j}}
+              \prod_{t=1}^n[N^\Lambda(w,i,t)_{i_t}] q_{i_t}^{N^{\Lambda,i,t)-1}}
 
     sage: R = RootSystem(['G', 2])
     sage:  klr_cyc_dim(R, [1], [1,2,1,1,2])
-
 
 
 AUTHOR:
