@@ -9,7 +9,7 @@ SageMath_ code for computing the dimensions of the weight spaces of the cyclotom
           = \sum_{w\in\Sym(i,j)}
               \prod_{t=1}^n[N^\Lambda(w,i,t)}_{i_t}] q_{i_i}^{N^{\Lambda,i,t)-1}}
 
-from the paper "Graded dimensions and monomial bases for the cyclotomic quiver Hecke algebras" of Hu and Shi HuShi_.
+from the paper HuShi_, "Graded dimensions and monomial bases for the cyclotomic quiver Hecke algebras" of Hu and Shi .
 
 The attached code provides a sigle command `klr_cyclotomic_dimension` that
 computes the ses the Hu-Shi formula to compute the dimension
