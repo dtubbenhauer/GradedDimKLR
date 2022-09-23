@@ -23,7 +23,7 @@ where:
 
 * ``C`` specifies the *Cartan type* of the quiver. This can either be a list
   of the form ``['A', 3]`` (finite type $A_3$), ``['A', 3, 1]`` (affine type
-  $A_3^{(1)}$), ``['B',4]`` (finite type $B_4$), etc.
+  $A_3^{(1)}$), ``['B',4]`` (finite type $B_4$), etc or ``C`` can be a [SageMath](https://www.sagemath.org/SageMath) Cartan type, such as ``CartanType(['D',3,1])``.
 
 * ``L`` is a *list* that specifies the dominant weight. For example,
   ``[0,2,2,3]`` represents the dominant weight
