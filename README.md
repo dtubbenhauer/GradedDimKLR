@@ -3,9 +3,11 @@ GradedDimKLR
 
 SageMath_ code for computing the dimensions of the weight spaces of the cyclotomic KLR algebras attached to symmetrisable quivers using the amazing formula
 
-      $$\dim_q e(i)R^\Lambda_\alpha e(j)
+```math
+    \dim_q e(i)R^\Lambda_\alpha e(j)
           = \sum_{w\in\Sym(i,j)}
-              \prod_{t=1}^n[N^\Lambda(w,i,t)}_{i_t}] q_{i_i}^{N^{\Lambda,i,t)-1}}$$
+              \prod_{t=1}^n[N^\Lambda(w,i,t)}_{i_t}] q_{i_i}^{N^{\Lambda,i,t)-1}}
+```
 
 from the paper [Graded dimensions and monomial bases for the cyclotomic quiver Hecke algebras](https://arxiv.org/abs/2108.05508G) of Hu and Shi.
 
@@ -18,12 +20,12 @@ The attached code provides a single command ``klr_cyclotomic_dimension`` that us
 where:
 
 * ``C`` specifies the *Cartan type* of the quiver. This can either be a a list
-  of the form ``['A', 3]`` (finite type :math:`A_3`), ``['A', 3, 1]`` (affine type
-  :math:`A_3^{(1)}`), ``['B',4]`` (finite type :math:`B_4`), etc.
+  of the form ``['A', 3]`` (finite type $A_3$), ``['A', 3, 1]`` (affine type
+  $A_3^{(1)}$), ``['B',4]`` (finite type $B_4$), etc.
 
 * ``L`` is a *list* that specifies the dominant weight. For example,
   ``[0,2,2,3]`` represents the dominant weight
-  :math:`\Lambda_0+2\Lambda_2+\Lambda_3`.
+  $\Lambda_0+2\Lambda_2+\Lambda_3$.
 
 * ``i`` is an `n`-tuple of vertices of the quiver
 
