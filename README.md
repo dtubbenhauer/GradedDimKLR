@@ -33,7 +33,7 @@ where:
   ``j`` is set equal to ``i``.
 
 * ``verbose`` an optional parameter that when set to ``True`` causes additional
-  information to from the HuShi_ formula to be printed.
+  information from the Hu-Shi formula to be printed.
 
 Examples
 --------
