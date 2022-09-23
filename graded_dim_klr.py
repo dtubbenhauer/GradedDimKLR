@@ -8,7 +8,7 @@ r"""
 
         \dim_q e(i)R^\Lambda_n e(j)
           = \sum_{w\in S_{i,j}}
-              \prod_{t=1}^n[N^\Lambda(w,i,t)_{i_t}] q_{i_t}^{N^\Lambda(i,t)-1}}
+              \prod_{t=1}^n[N^\Lambda(w,i,t)_{i_t}] q_{i_t}^{N^\Lambda(i,t)-1}
 
     sage: R = RootSystem(['G', 2])
     sage:  klr_cyc_dim(R, [1], [1,2,1,1,2])
