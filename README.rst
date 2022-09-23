@@ -11,23 +11,34 @@ SageMath_ code for computing the dimensions of the weight spaces of the cyclotom
 
 from the paper HuShi_, "Graded dimensions and monomial bases for the cyclotomic quiver Hecke algebras" of Hu and Shi .
 
-The attached code provides a sigle command `klr_cyclotomic_dimension` that
-computes the ses the Hu-Shi formula to compute the dimension
+The attached code provides a sigle command ``klr_cyclotomic_dimension`` that
+computes the ses the Hu-Shi formula to compute the dimension. The synaxt of
+this command is:
+
+.. code-bHuShi_lock:: python
+
+   klr_cyclotomic_dimension(C, L, i, [j, verbose])
+
+where:
+
+* ``C`` specifies the *Cartan type* of the quiver. This can either be a a list
+  of the form ``['A', 3]`` (finite type :math:`A_3`), ``['A', 3, 1]`` (affine type
+  :math:`A_3^{(1)}`)
 
 Usage
 -----
 
-* With a local installation of SageMath_, start  SageMath_ and attach the file `graded_dim_klr` using:
+* With a local installation of SageMath_, start  SageMath_ and attach the file ``graded_dim_klr`` using:
 
-.. code-block:: python
+.. code-bHuShi_lock:: python
 
    sage: %attach graded_dim_klr
    sage: klr_cyclotomic_dimension(['A',3],[2], [2,3,3,2,1], [2,3,2,3,1])
    sage: klr_cyclotomic_dimension(['B',3],[2], [2,3,3,2,1], verbose=True)
 
 
-* Using SageMathCell_, cut-and-paste the code from `graded_dim_klr` into a cell
-  and then type the `klr_cyclotomic_dimension` commands into the bottom of the
+* Using SageMathCell_, cut-and-paste the code from ``graded_dim_klr`` into a cell
+  and then type the ``klr_cyclotomic_dimension`` commands into the bottom of the
   cell.
 
 .. code-block:: python
